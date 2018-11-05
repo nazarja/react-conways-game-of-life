@@ -1,0 +1,171 @@
+
+/********************  
+Fonts
+********************/
+
+@import url('https://fonts.googleapis.com/css?family=Imprima|Erica+One|Libre+Barcode+39+Text|Space+Mono');
+
+/* 
+font-family: 'Imprima', sans-serif;
+font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Erica One', cursive; 
+*/
+
+/********************  
+  General 
+********************/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  color: #333;
+}
+
+br {
+  margin: 0;
+  padding: 0;
+}
+
+/********************  
+  Header
+********************/
+
+#Header {
+  width: 900px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.title1 {
+  font-family: 'Erica One', cursive; 
+  font-weight: lighter;
+}
+
+.title2 {
+  font-family: 'Libre Barcode 39 Text', cursive;
+  background: -webkit-linear-gradient(left, #B4358B, #0099DA, #60B536, #FAB122);
+  background: -moz-linear-gradient(left, #B4358B, #0099DA, #60B536, #FAB122);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/********************  
+  Controls
+********************/
+
+#Controls {
+  width: 900px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.controlsSelectable {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+  cursor: pointer;
+  position: relative;
+}
+
+#generationsDisplay {
+   display: inline-block;
+  width: 190px;
+  text-align: left;
+}
+
+#playPauseSelect:hover {
+  color: #B4358B;
+}
+
+#randomSelect:hover {
+  color: #2584C9;
+}
+
+#clearSelect:hover {
+  color: #36A97E;
+}
+
+#speedSelect:hover {
+  color: #FAB122;
+}
+
+#gridSizeSelect:hover {
+  color: orangered;
+}
+
+.dropDown {
+  display: none;
+  position: absolute;
+  right: 0;
+  border: 1px solid #333;
+  width: 100px;
+  padding-right: 15px;
+  text-align: right;
+  background-color: white;
+  z-index: 2;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+
+/********************  
+  Grid
+********************/
+
+.Grid {
+  width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+#Grid {
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  display: inline-grid;
+}
+
+/********************  
+  Cell
+********************/
+
+.cellAlive, .cellDead {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 8px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+.cellAlive {
+  background-color: #37A97D;
+}
+
+.cellDead {
+  background-color: #666;
+}
+
+/********************  
+  Footer
+********************/
+
+#Footer {
+  width: 900px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.credits > strong {
+  color: #685FAD;
+}
+
+.credits > a {
+  color: #2584C9;
+  transition: .5s;
+  text-decoration: none;
+}
+
+.credits > a:hover {
+  color: #36A97E;
+}
